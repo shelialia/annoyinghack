@@ -1,0 +1,37 @@
+.App {
+  position:relative;
+  
+
+  margin:50px;
+}
+
+
+.age{
+  display: inline-block;
+  white-space:nowrap;
+}
+.age input {
+  width:50px;
+}
+
+.name > input {
+  color: transparent;
+  height: 100px;
+  width: 200px;
+}
+
+
+
+.name {
+  height:100px;
+  width:100px;
+  margin: 0 0 50px 0;
+  position: relative;
+  
+}
+.name-text {
+  position: absolute;
+  top: 50px;
+  
+  transition: right 0.2s;
+}
