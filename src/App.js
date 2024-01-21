@@ -3,6 +3,7 @@ import { useState, useEffect} from 'react';
 import AnnoyingTextField from './components/AnnoyingTextField';
 import AnnoyingDate from './components/AnnoyingDate';
 import './App.css';
+import RunningCats from './components/RunningCats';
 
 function App() {
   const [ count, setCount ] = useState(9000000);
@@ -83,7 +84,7 @@ function App() {
       <h1>Application form for Hack&Roll</h1>
       <div class='name'>
         <label>Name: </label>
-          <input onChange={(val) => {
+          <input style={{width: 400}} onChange={(val) => {
             setName(val.target.value);
             onNameChange(val.target.value);
           }}/>
@@ -127,6 +128,7 @@ function App() {
             }}>
         Submit
       </button>
+      <RunningCats />
     </div>
     
   

@@ -1,0 +1,29 @@
+/* RunningCats.css */
+.running-cats {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .cat {
+    position: absolute;
+    animation: run 5s linear infinite;
+    transform-origin: bottom right;
+  }
+  
+  .cat-0 { top: 10%; left: 10%; }
+  .cat-1 { top: 20%; left: 20%; }
+  .cat-2 { top: 30%; left: 30%; }
+  .cat-3 { top: 40%; left: 40%; }
+  .cat-4 { top: 50%; left: 50%; }
+  
+  @keyframes run {
+    0% { transform: translate(0, 0) scaleX(1); }
+    50% { transform: translate(calc(100vw - 100%), calc(100vh - 100%)) scaleX(-1); }
+    100% { transform: translate(0, 0) scaleX(1); }
+  }
+  
